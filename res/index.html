@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Java Webserver</title>
+    </head>
+    <body>
+        <h1>Java Webserver</h1>
+        <p>This is the default webpage...</p>
+        <table border="solid black 1pt">
+            <tr><th colspan="2">Control:</th></tr>
+            <tr><th>w</th><td>move up</td></tr>
+            <tr><th>a</th><td>move left</td></tr>
+            <tr><th>s</th><td>move down</td></tr>
+            <tr><th>d</th><td>move right</td></tr>
+            <tr><th>Space</th><td><b>STOP</b></td></tr>
+        </table>
+
+        <script>
+            document.addEventListener('keydown', (key) => {
+                let dir = '';
+                switch (key.code) {
+                    case 'KeyW':  dir = '/up';    break;
+                    case 'KeyA':  dir = '/left';  break;
+                    case 'KeyS':  dir = '/down';  break;
+                    case 'KeyD':  dir = '/right'; break;
+                    case 'Space': dir = '/stop';  break;
+                }
+                if (dir !== '') {
+                    fetch(dir)
+                        .then(() => {alert(dir);})
+                        .catch((e) => alert(e));
+                }
+            });
+        </script>
+    </body>
+</html>
