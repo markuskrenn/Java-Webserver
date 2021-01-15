@@ -1,7 +1,5 @@
 package Raspberry;
 
-import java.util.stream.Stream;
-
 public class Raspberry {
     static {
         // Load native library raspberry.dll (Windows) or raspberry.so (Unixes) at runtime
@@ -15,7 +13,7 @@ public class Raspberry {
     public native void right();
     public native void stop();
 
-    public native Stream camera();
+    public native Object camera();
 
     /**
      * Test native calls, by simple printing "Hello world!" in C

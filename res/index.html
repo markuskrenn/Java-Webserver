@@ -16,6 +16,8 @@
             <tr><th>Space</th><td><b>STOP</b></td></tr>
         </table>
 
+        <img src="/example.svg" />
+
         <script>
             document.addEventListener('keydown', (key) => {
                 let dir = '';
@@ -29,7 +31,7 @@
                 if (dir !== '') {
                     fetch(dir)
                         .then(() => console.info(dir))
-                        .catch((e) => alert(e));
+                        .catch((e) => console.warn(e));
                 }
             });
         </script>
