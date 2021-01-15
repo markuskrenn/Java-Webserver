@@ -7,7 +7,7 @@
     <body>
         <h1>Java Webserver</h1>
         <p>This is the default webpage...</p>
-        <table border="solid black 1pt">
+        <table border="1pt solid black">
             <tr><th colspan="2">Control:</th></tr>
             <tr><th>w</th><td>move up</td></tr>
             <tr><th>a</th><td>move left</td></tr>
@@ -28,7 +28,7 @@
                 }
                 if (dir !== '') {
                     fetch(dir)
-                        .then(() => {alert(dir);})
+                        .then(() => console.info(dir))
                         .catch((e) => alert(e));
                 }
             });

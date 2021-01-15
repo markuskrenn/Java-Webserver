@@ -7,7 +7,14 @@ The video is send to a connected browser. The control is also done inside the we
 ## Development Team
 Daniel Skrzipek, Markus Krenn
 
+## Prerequisits
+1. Make sure `JAVA_HOME` is set:
+
+    echo $JAVA_HOME
+
+2. Make sure `"vmArgs": "-Djava.library.path=jni"` is set!
 
 ## Run
-Run main at `Webserver.java` and open <server-ip>:1111 with any browser.
-In the browser you can use `W A S D` buttons for navigation.
+Run main at `Webserver.java` and open `<server-ip>:1111` with any browser.
+
+In the browser you can use `W A S D Space` buttons for navigation.
