@@ -4,6 +4,8 @@
 This project runs on a Raspberry Pi, that controls motors to drive a camera in a room.
 The video is send to a connected browser. The control is also done inside the web app.
 
+![Raspberry](images/P1022784s.jpg)
+
 ## Development Team
 Daniel Skrzipek, Markus Krenn
 
